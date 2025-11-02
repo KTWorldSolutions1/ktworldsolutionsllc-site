@@ -1,0 +1,21 @@
+/* hero background image display fix */
+.hero-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #0b1228;
+  opacity: 1;
+  animation: fadeZoom 22s infinite alternate;
+  transform-origin: center;
+}
+
+/* pulsing gold button */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 8px 2px rgba(242,183,5,0.35); }
+  50% { box-shadow: 0 0 14px 5px rgba(242,183,5,0.75); }
+}
+.btn.gold {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
