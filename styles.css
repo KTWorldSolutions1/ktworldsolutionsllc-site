@@ -329,3 +329,36 @@ input,select,textarea{width:100%;padding:15px;border:1px solid #ccd2db;border-ra
     padding: 22px;
   }
 }
+
+
+/* Leadership Structure patch */
+.leadership-structure-box h3 {
+  margin-bottom: 20px;
+}
+
+.full-leadership-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.full-leadership-grid div {
+  min-height: 112px;
+}
+
+.full-leadership-grid span {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.full-leadership-grid strong {
+  font-size: 19px;
+}
+
+@media (max-width: 720px) {
+  .full-leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-leadership-grid div {
+    min-height: auto;
+  }
+}
