@@ -1,27 +1,14 @@
-KT WORLD SOLUTIONS LLC - OFFICIAL REBRAND WEBSITE
+KT World Solutions LLC - realistic image build
 
-This package is built from your actual GitHub website files and redesigned to match the black/gold corporate mockup direction.
+This package updates:
+- Phone number: (252) 326-5269
+- Homepage/division imagery:
+  Medical Courier = hospital courier image
+  Trucking = your Kenworth image
+  Truck Parking = aerial truck parking lot
+  Assisted Living = senior living building/interior images
+- Image paths use root-level files for easier iPhone/Working Copy upload.
 
-IMPORTANT:
-Do not upload this ZIP file itself to GitHub.
-Unzip it first, then upload/replace the files inside your repository.
-
-Main replacement files:
-- index.html
-- about.html
-- medical-courier.html
-- trucking.html
-- truck-parking.html
-- assisted-living.html
-- contact.html
-- styles.css
-- app.js
-- assets folder images
-
-Fast iPhone route:
-1. Open this ZIP in Files.
-2. Tap to unzip.
-3. Go to GitHub repo.
-4. Replace index.html, styles.css, app.js first.
-5. Upload the assets folder images.
-6. Then replace the remaining HTML pages.
+Upload/replace the entire contents into the GitHub repo root.
+Then commit + push to main.
+Vercel should redeploy automatically.
