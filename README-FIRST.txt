@@ -1,14 +1,16 @@
-KT World Solutions LLC - realistic image build
+KT World Solutions LLC - final polish build
 
-This package updates:
-- Phone number: (252) 326-5269
-- Homepage/division imagery:
-  Medical Courier = hospital courier image
-  Trucking = your Kenworth image
-  Truck Parking = aerial truck parking lot
-  Assisted Living = senior living building/interior images
-- Image paths use root-level files for easier iPhone/Working Copy upload.
+Updates included:
+- Homepage hero image changed to Travis standing in front of the Kenworth.
+- Division page labels cleaned up:
+  KT WORLD SOLUTIONS TRUCKING DIVISION
+  KT WORLD SOLUTIONS MEDICAL COURIER DIVISION
+  KT WORLD SOLUTIONS TRUCK PARKING DIVISION
+  KT WORLD SOLUTIONS ASSISTED LIVING DIVISION
+- Phone number remains (252) 326-5269.
+- Realistic division photos are included.
+- Root-level image paths are included for easier Vercel/Working Copy deployment.
 
 Upload/replace the entire contents into the GitHub repo root.
-Then commit + push to main.
-Vercel should redeploy automatically.
+Commit + push to main.
+Vercel will redeploy automatically.
