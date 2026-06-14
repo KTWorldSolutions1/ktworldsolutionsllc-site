@@ -1,0 +1,109 @@
+
+:root{
+  --navy:#001B2A;
+  --navy2:#051525;
+  --black:#02060A;
+  --gold:#F2B705;
+  --gold2:#FFD24A;
+  --white:#ffffff;
+  --muted:#D8E0EA;
+  --soft:#F6F8FB;
+  --ink:#101828;
+  --line:rgba(255,255,255,.16);
+  --shadow:0 28px 70px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:var(--ink);line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:min(1140px,92%);margin:0 auto}
+.top-strip{background:#000;color:#fff;font-size:.84rem}
+.strip-inner{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.45rem 0;opacity:.88}
+.site-header{position:sticky;top:0;z-index:99;background:rgba(2,6,10,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+.brand{display:flex;align-items:center;gap:.8rem;color:#fff;font-weight:900;text-transform:uppercase;letter-spacing:.02em}
+.brand img{width:78px;background:#fff;border-radius:4px;padding:3px}
+.site-nav{display:flex;align-items:center;gap:1.05rem;color:#fff;font-size:.88rem;font-weight:800;text-transform:uppercase}
+.site-nav a{opacity:.9}
+.site-nav a:hover,.site-nav a.active{color:var(--gold);opacity:1}
+.quote-link{background:var(--gold);color:#02060A!important;padding:.72rem .95rem;border-radius:6px;opacity:1!important}
+.menu-toggle{display:none;background:transparent;color:#fff;border:1px solid var(--line);border-radius:7px;padding:.55rem .75rem;font-weight:800}
+.hero{position:relative;min-height:82vh;display:flex;align-items:center;color:#fff;background:#02060A;overflow:hidden}
+.home-hero{background-image:url("assets/hero-truck.jpg");background-size:cover;background-position:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.93),rgba(0,0,0,.62),rgba(0,0,0,.2));z-index:1}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 8% 25%,rgba(242,183,5,.28),transparent 34%);z-index:2}
+.hero-content{position:relative;z-index:3;max-width:720px;padding:5rem 0}
+.eyebrow{color:var(--gold);font-weight:900;text-transform:uppercase;letter-spacing:.18em;font-size:.82rem;margin:0 0 .75rem}
+.dark-text{color:#7C5B00}
+h1,h2,h3,p{margin-top:0}
+h1{font-size:clamp(2.7rem,8vw,5.9rem);line-height:.95;letter-spacing:-.055em;text-transform:uppercase;margin-bottom:1.1rem}
+h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.05;letter-spacing:-.035em;text-transform:uppercase;margin-bottom:1rem}
+h3{line-height:1.15}
+.hero-copy,.page-hero p{font-size:1.15rem;color:#E7EEF6;max-width:700px}
+.button-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.8rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.95rem 1.25rem;border-radius:6px;font-weight:900;text-transform:uppercase;border:2px solid transparent;font-size:.88rem}
+.btn.gold{background:var(--gold);color:#030303}
+.btn.outline{color:#fff;border-color:var(--gold)}
+.btn.dark,.navy-btn{background:#001B2A;color:#fff}
+.section{padding:5rem 0}
+.section.navy{background:linear-gradient(180deg,#001B2A,#02060A);color:#fff}
+.section.black{background:#02060A;color:#fff}
+.center{text-align:center}
+.section-lead{max-width:780px;margin:0 auto;color:#D8E0EA}
+.division-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.5rem;text-align:left}
+.division-card{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.division-card img{width:100%;height:220px;object-fit:cover}
+.division-body{padding:1.2rem;display:flex;flex-direction:column;gap:.65rem;flex:1}
+.circle-icon{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#001B2A;font-weight:900;margin-top:-44px;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.division-body h3{text-transform:uppercase;margin:0;font-size:1.15rem}
+.division-body p{color:#E4EBF2;font-size:.95rem;margin:0}
+.division-body a{color:var(--gold);font-weight:900;text-transform:uppercase;margin-top:auto}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:2.2rem;background:rgba(255,255,255,.14)}
+.feature{background:#050B12;padding:2rem 1.2rem}
+.feature span{font-size:2.3rem}
+.feature h3{text-transform:uppercase;margin:.75rem 0 .4rem}
+.feature p{color:#D8E0EA}
+.stats-band{background:#06111D;color:#fff}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.14)}
+.stats-grid div{text-align:center;padding:1.6rem;background:#06111D}
+.stats-grid strong{display:block;color:var(--gold);font-size:2rem;line-height:1}
+.stats-grid span{text-transform:uppercase;font-weight:800;font-size:.85rem}
+.page-hero{background:linear-gradient(135deg,rgba(2,6,10,.94),rgba(0,27,42,.88)),url("assets/hero-truck.jpg") center/cover no-repeat;color:#fff;padding:6rem 0}
+.page-hero h1{max-width:900px}
+.service-hero{background-image:linear-gradient(135deg,rgba(2,6,10,.92),rgba(0,27,42,.72)),var(--hero-image);background-size:cover;background-position:center}
+.split{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:start}
+.info-card{background:#fff;border:1px solid #E5E7EB;border-radius:18px;padding:2rem;box-shadow:0 20px 60px rgba(15,23,42,.1)}
+.info-card h3{text-transform:uppercase}
+.info-card ul,.check-list{padding:0;margin:1rem 0 0;list-style:none}
+.info-card li,.check-list li{position:relative;padding-left:1.7rem;margin:.65rem 0}
+.info-card li::before,.check-list li::before{content:"✓";position:absolute;left:0;color:#7C5B00;font-weight:900}
+.gold-card{background:linear-gradient(135deg,#FFF7D6,#fff);border-color:#F7D45D}
+.contact-card{background:#001B2A;color:#fff;border-color:#001B2A}
+.contact-card a{color:var(--gold)}
+.cta-band{background:linear-gradient(135deg,var(--gold),var(--gold2));padding:3.4rem 0;color:#050505}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.cta-inner h2{margin-bottom:0;max-width:800px}
+.site-footer{background:#02060A;color:#CBD5E1;padding:3rem 0 1rem}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:2rem}
+.footer-logo{width:140px;background:#fff;border-radius:4px;margin-bottom:1rem}
+.site-footer h3{color:#fff;text-transform:uppercase;font-size:1rem}
+.site-footer a{display:block;margin:.35rem 0;color:#CBD5E1}
+.site-footer a:hover{color:var(--gold)}
+.legal{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;font-size:.85rem;color:#94A3B8}
+@media(max-width:920px){
+  .menu-toggle{display:block}
+  .site-nav{display:none;position:absolute;left:0;right:0;top:100%;background:#02060A;padding:1rem 4%;flex-direction:column;align-items:flex-start;border-top:1px solid var(--line)}
+  .site-nav.open{display:flex}
+  .division-grid,.feature-grid,.stats-grid,.footer-grid{grid-template-columns:1fr 1fr}
+  .split,.cta-inner{grid-template-columns:1fr;display:grid}
+  .hero{min-height:78vh}
+}
+@media(max-width:560px){
+  .top-strip{font-size:.75rem}
+  .brand span{font-size:.9rem}
+  .brand img{width:62px}
+  .division-grid,.feature-grid,.stats-grid,.footer-grid{grid-template-columns:1fr}
+  .hero-content{padding:4rem 0}
+  .division-card img{height:235px}
+}
