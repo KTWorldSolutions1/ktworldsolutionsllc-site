@@ -632,3 +632,322 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================================
+   KTWS SAFE COMPACT POLISH
+   Keeps original layout intact; only tightens sizing/spacing.
+   ========================================================= */
+
+/* Slightly tighter global spacing */
+.container {
+  width: min(1120px, calc(100% - 40px));
+}
+
+/* Header / navigation polish */
+.topline {
+  padding: 9px 32px;
+  font-size: 13px;
+}
+
+.navbar {
+  padding: 14px 32px;
+}
+
+.brand img {
+  max-width: 132px;
+  height: 48px;
+}
+
+.nav-links {
+  gap: 14px;
+  font-size: 11px;
+}
+
+.nav-cta {
+  padding: 10px 13px;
+}
+
+/* Hero: keep dramatic look, reduce billboard size */
+.hero {
+  min-height: 590px;
+}
+
+.hero-content {
+  padding: 62px 0;
+}
+
+h1 {
+  font-size: clamp(38px, 6.2vw, 72px);
+  line-height: .98;
+}
+
+.hero-text {
+  font-size: clamp(17px, 2.4vw, 23px);
+  max-width: 720px;
+}
+
+.hero-actions {
+  margin-top: 26px;
+}
+
+.btn {
+  padding: 15px 23px;
+  font-size: 14px;
+}
+
+/* Section tightening */
+.section {
+  padding: 62px 0;
+}
+
+.split {
+  gap: 42px;
+}
+
+.split h2,
+.division-section h2,
+.section-heading h2,
+.showcase-heading h2 {
+  font-size: clamp(30px, 4.4vw, 48px);
+}
+
+.split p,
+.section p,
+.feature-list,
+.section-heading p:not(.eyebrow),
+.showcase-heading p:not(.eyebrow) {
+  font-size: 16.5px;
+  line-height: 1.6;
+}
+
+/* Cards */
+.cards {
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.card div {
+  padding: 18px;
+}
+
+.card img {
+  height: 180px;
+}
+
+.card h3 {
+  font-size: 19px;
+}
+
+.card p {
+  font-size: 14.5px;
+}
+
+/* Homepage division showcase */
+.division-showcase {
+  padding-top: 62px;
+  padding-bottom: 68px;
+}
+
+.showcase-grid {
+  gap: 20px;
+}
+
+.showcase-card {
+  min-height: 255px;
+}
+
+.showcase-card div {
+  padding: 24px;
+}
+
+.showcase-card h3 {
+  font-size: 24px;
+}
+
+.showcase-card p {
+  font-size: 15px;
+}
+
+.showcase-card strong,
+.card-button {
+  padding: 10px 14px;
+  font-size: 12px;
+}
+
+/* Leadership section */
+.division-oversight {
+  padding: 24px;
+  margin: 28px 0 36px;
+}
+
+.team-grid {
+  gap: 20px;
+}
+
+.team-card img {
+  height: 270px;
+}
+
+.featured-team-card img {
+  height: 320px;
+}
+
+.team-card div {
+  padding: 19px;
+}
+
+.team-card h3 {
+  font-size: 21px;
+}
+
+.team-card p {
+  font-size: 14.5px;
+}
+
+/* Trust strip and stats */
+.trust-strip {
+  padding: 14px 0;
+}
+
+.stats-row {
+  padding-top: 24px;
+  padding-bottom: 28px;
+}
+
+.stats-row div {
+  padding: 18px 14px;
+}
+
+.stats-row strong {
+  font-size: clamp(28px, 4.2vw, 44px);
+}
+
+/* Footer */
+.footer {
+  padding-top: 44px;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+/* Mobile-specific tightening without killing design */
+@media (max-width: 860px) {
+  .topline {
+    padding: 8px 22px;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .navbar {
+    padding: 13px 22px;
+  }
+
+  .brand span {
+    font-size: 16px;
+  }
+
+  .brand img {
+    max-width: 108px;
+    height: 42px;
+  }
+
+  .menu-toggle {
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+
+  .nav-links {
+    padding: 18px 24px;
+  }
+
+  .hero {
+    min-height: 530px;
+  }
+
+  .hero-content {
+    padding: 48px 0;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.02;
+  }
+
+  .division-hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: .16em;
+    margin-bottom: 14px;
+  }
+
+  .hero-actions .btn {
+    padding: 14px 18px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .split h2,
+  .division-section h2,
+  .section-heading h2,
+  .showcase-heading h2 {
+    font-size: 32px;
+  }
+
+  .card img {
+    height: 175px;
+  }
+
+  .showcase-card img {
+    height: 220px;
+  }
+
+  .team-card img {
+    height: 300px;
+  }
+
+  .featured-team-card img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: min(100% - 30px, 1120px);
+  }
+
+  .brand span {
+    font-size: 15px;
+  }
+
+  .brand img {
+    width: auto;
+    max-width: 100px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .division-hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-size: 17px;
+  }
+
+  .btn {
+    padding: 13px 16px;
+  }
+}
