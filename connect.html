@@ -8,75 +8,20 @@
   <link rel="icon" href="favicon-32x32.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <style>
-    :root{
-      --black:#050607;
-      --charcoal:#0d131b;
-      --soft:#111722;
-      --gold:#f0bd2f;
-      --gold2:#ffd85a;
-      --text:#ffffff;
-      --muted:#d8dee6;
-      --line:rgba(240,189,47,.32);
-    }
+    :root{--black:#050607;--charcoal:#0d131b;--soft:#111722;--gold:#f0bd2f;--gold2:#ffd85a;--text:#ffffff;--muted:#d8dee6;--line:rgba(240,189,47,.32)}
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:Arial,Helvetica,sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(circle at top right,rgba(240,189,47,.16),transparent 34%),
-        radial-gradient(circle at bottom left,rgba(240,189,47,.10),transparent 32%),
-        linear-gradient(135deg,#050607 0%,#0d131b 54%,#111722 100%);
-      min-height:100vh;
-    }
-    a{color:inherit;text-decoration:none}
-    .shell{width:min(980px,calc(100% - 32px));margin:0 auto;padding:28px 0 42px}
-    .card{
-      background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.025)),rgba(7,10,15,.92);
-      border:1px solid var(--line);
-      border-radius:30px;
-      box-shadow:0 30px 90px rgba(0,0,0,.48),0 0 60px rgba(240,189,47,.08);
-      overflow:hidden;
-    }
-    .hero{text-align:center;padding:42px 24px 30px;border-bottom:1px solid rgba(240,189,47,.22)}
-    .logo{width:190px;max-width:70%;margin:0 auto 22px;background:#fff;border-radius:14px;padding:10px 14px;display:block;box-shadow:0 16px 42px rgba(0,0,0,.30)}
-    .kicker{color:var(--gold);font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin:0 0 16px;font-size:13px}
-    h1{font-size:clamp(36px,6vw,70px);line-height:.96;letter-spacing:-.055em;text-transform:uppercase;margin:0 0 16px}
-    .desc{max-width:720px;margin:0 auto;color:var(--muted);font-size:18px;line-height:1.62}
-    .section{padding:30px 24px;border-bottom:1px solid rgba(255,255,255,.08)}
-    .section:last-child{border-bottom:0}
-    h2{text-align:center;color:var(--gold);font-size:14px;text-transform:uppercase;letter-spacing:.22em;margin:0 0 18px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .link{
-      display:flex;
-      flex-direction:column;
-      gap:7px;
-      background:rgba(255,255,255,.065);
-      border:1px solid rgba(255,255,255,.12);
-      border-radius:18px;
-      padding:18px;
-      min-height:125px;
-      transition:transform .18s ease,border-color .18s ease,background .18s ease;
-    }
-    .link:hover{transform:translateY(-3px);border-color:rgba(240,189,47,.68);background:rgba(240,189,47,.10)}
-    .icon{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:var(--gold);color:#050607;font-size:25px;margin-bottom:6px}
-    .link strong{text-transform:uppercase;letter-spacing:.04em;font-size:16px}
-    .link small{color:#cfd6df;font-size:13px;line-height:1.35}
-    .primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#050607;border-color:rgba(240,189,47,.88)}
-    .primary .icon{background:#050607;color:var(--gold)}
-    .primary small{color:#202733}
-    .footer{text-align:center;padding:26px 24px 34px;color:var(--muted)}
-    .mini{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
-    .mini a{border:1px solid rgba(240,189,47,.45);border-radius:999px;padding:11px 16px;color:var(--gold);font-weight:900;text-transform:uppercase;font-size:12px;letter-spacing:.05em}
-    .note{font-size:13px;color:#aeb6c2;margin-top:18px}
-    @media(max-width:760px){
-      .shell{width:min(100% - 24px,980px);padding:18px 0 30px}
-      .card{border-radius:24px}
-      .grid{grid-template-columns:1fr}
-      .section{padding:26px 18px}
-      .hero{padding:34px 18px 24px}
-      .link{min-height:96px}
-    }
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:radial-gradient(circle at top right,rgba(240,189,47,.16),transparent 34%),radial-gradient(circle at bottom left,rgba(240,189,47,.10),transparent 32%),linear-gradient(135deg,#050607 0%,#0d131b 54%,#111722 100%);min-height:100vh}
+    a{color:inherit;text-decoration:none}.shell{width:min(980px,calc(100% - 32px));margin:0 auto;padding:28px 0 42px}
+    .card{background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.025)),rgba(7,10,15,.92);border:1px solid var(--line);border-radius:30px;box-shadow:0 30px 90px rgba(0,0,0,.48),0 0 60px rgba(240,189,47,.08);overflow:hidden}
+    .hero{text-align:center;padding:42px 24px 30px;border-bottom:1px solid rgba(240,189,47,.22)}.logo{width:190px;max-width:70%;margin:0 auto 22px;background:#fff;border-radius:14px;padding:10px 14px;display:block;box-shadow:0 16px 42px rgba(0,0,0,.30)}
+    .kicker{color:var(--gold);font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin:0 0 16px;font-size:13px}h1{font-size:clamp(36px,6vw,70px);line-height:.96;letter-spacing:-.055em;text-transform:uppercase;margin:0 0 16px}
+    .desc{max-width:720px;margin:0 auto;color:var(--muted);font-size:18px;line-height:1.62}.section{padding:30px 24px;border-bottom:1px solid rgba(255,255,255,.08)}.section:last-child{border-bottom:0}
+    h2{text-align:center;color:var(--gold);font-size:14px;text-transform:uppercase;letter-spacing:.22em;margin:0 0 18px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .link{display:flex;flex-direction:column;gap:7px;background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px;min-height:125px;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+    .link:hover{transform:translateY(-3px);border-color:rgba(240,189,47,.68);background:rgba(240,189,47,.10)}.icon{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:var(--gold);color:#050607;font-size:25px;margin-bottom:6px}
+    .link strong{text-transform:uppercase;letter-spacing:.04em;font-size:16px}.link small{color:#cfd6df;font-size:13px;line-height:1.35}.primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#050607;border-color:rgba(240,189,47,.88)}.primary .icon{background:#050607;color:var(--gold)}.primary small{color:#202733}
+    .footer{text-align:center;padding:26px 24px 34px;color:var(--muted)}.mini{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}.mini a{border:1px solid rgba(240,189,47,.45);border-radius:999px;padding:11px 16px;color:var(--gold);font-weight:900;text-transform:uppercase;font-size:12px;letter-spacing:.05em}
+    .note{font-size:13px;color:#aeb6c2;margin-top:18px}@media(max-width:760px){.shell{width:min(100% - 24px,980px);padding:18px 0 30px}.card{border-radius:24px}.grid{grid-template-columns:1fr}.section{padding:26px 18px}.hero{padding:34px 18px 24px}.link{min-height:96px}}
   </style>
 </head>
 <body>
@@ -88,48 +33,30 @@
         <h1>KT World Solutions Hub</h1>
         <p class="desc">Your digital front door for transportation, medical courier services, truck parking, assisted living development, quote requests, and company updates.</p>
       </div>
-
-      <div class="section">
-        <h2>Start Here</h2>
-        <div class="grid">
-          <a class="link primary" href="https://ktworldsolutions.com"><span class="icon">🌐</span><strong>Website</strong><small>Explore KT World Solutions LLC</small></a>
-          <a class="link primary" href="contact.html"><span class="icon">📋</span><strong>Request Quote</strong><small>Submit a service request</small></a>
-          <a class="link primary" href="tel:+12523265269"><span class="icon">📞</span><strong>Call Now</strong><small>(252) 326-5269</small></a>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Our Divisions</h2>
-        <div class="grid">
-          <a class="link" href="trucking.html"><span class="icon">🚛</span><strong>Trucking</strong><small>Regional freight and logistics</small></a>
-          <a class="link" href="medical-courier.html"><span class="icon">🧬</span><strong>Medical Courier</strong><small>Healthcare logistics support</small></a>
-          <a class="link" href="truck-parking.html"><span class="icon">🅿️</span><strong>Truck Parking</strong><small>Infrastructure development</small></a>
-          <a class="link" href="assisted-living.html"><span class="icon">🏡</span><strong>Assisted Living</strong><small>Care development operations</small></a>
-          <a class="link" href="careers.html"><span class="icon">💼</span><strong>Careers</strong><small>Join the KTWS team</small></a>
-          <a class="link" href="bio.html"><span class="icon">👔</span><strong>Founder Bio</strong><small>Meet Travis L. Lewter</small></a>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Connect Socially</h2>
-        <div class="grid">
-          <a class="link" href="https://www.facebook.com/share/1PQuV7TEsZ/?mibextid=wwXIfr" target="_blank" rel="noopener"><span class="icon">📘</span><strong>Facebook</strong><small>KT World Solutions LLC</small></a>
-          <a class="link" href="https://www.instagram.com/ktworldsolutionsllc?igsh=MXMwMWlzMm9vMHZhNw%3D%3D&utm_source=qr" target="_blank" rel="noopener"><span class="icon">📸</span><strong>Instagram</strong><small>@ktworldsolutionsllc</small></a>
-          <a class="link" href="https://www.tiktok.com/@kt.world.solution?_r=1&_t=ZT-97YqI2DEmB4" target="_blank" rel="noopener"><span class="icon">🎵</span><strong>TikTok</strong><small>@kt.world.solution</small></a>
-          <a class="link" href="https://www.linkedin.com/company/ktworldsolutionsllc/" target="_blank" rel="noopener"><span class="icon">💼</span><strong>LinkedIn</strong><small>KT World Solutions LLC</small></a>
-          <a class="link" href="mailto:ktworldsolutionsllc@outlook.com"><span class="icon">✉️</span><strong>Email</strong><small>ktworldsolutionsllc@outlook.com</small></a>
-          <a class="link" href="KTWS_Contact.vcf"><span class="icon">👤</span><strong>Save Contact</strong><small>Download contact card</small></a>
-        </div>
-      </div>
-
+      <div class="section"><h2>Start Here</h2><div class="grid">
+        <a class="link primary" href="https://ktworldsolutions.com"><span class="icon">🌐</span><strong>Website</strong><small>Explore KT World Solutions LLC</small></a>
+        <a class="link primary" href="contact.html"><span class="icon">📋</span><strong>Request Quote</strong><small>Submit a service request</small></a>
+        <a class="link primary" href="tel:+12523265269"><span class="icon">📞</span><strong>Call Now</strong><small>(252) 326-5269</small></a>
+      </div></div>
+      <div class="section"><h2>Our Divisions</h2><div class="grid">
+        <a class="link" href="trucking.html"><span class="icon">🚛</span><strong>Trucking</strong><small>Regional freight and logistics</small></a>
+        <a class="link" href="medical-courier.html"><span class="icon">🧬</span><strong>Medical Courier</strong><small>Healthcare logistics support</small></a>
+        <a class="link" href="truck-parking.html"><span class="icon">🅿️</span><strong>Truck Parking</strong><small>Infrastructure development</small></a>
+        <a class="link" href="assisted-living.html"><span class="icon">🏡</span><strong>Assisted Living</strong><small>Care development operations</small></a>
+        <a class="link" href="careers.html"><span class="icon">💼</span><strong>Careers</strong><small>Join the KTWS team</small></a>
+        <a class="link" href="bio.html"><span class="icon">👔</span><strong>Founder Bio</strong><small>Meet Travis L. Lewter</small></a>
+      </div></div>
+      <div class="section"><h2>Connect Socially</h2><div class="grid">
+        <a class="link" href="https://www.facebook.com/share/1PQuV7TEsZ/?mibextid=wwXIfr" target="_blank" rel="noopener"><span class="icon">📘</span><strong>Facebook</strong><small>KT World Solutions LLC</small></a>
+        <a class="link" href="https://www.instagram.com/ktworldsolutionsllc?igsh=MXMwMWlzMm9vMHZhNw%3D%3D&utm_source=qr" target="_blank" rel="noopener"><span class="icon">📸</span><strong>Instagram</strong><small>@ktworldsolutionsllc</small></a>
+        <a class="link" href="https://www.tiktok.com/@kt.world.solutions" target="_blank" rel="noopener"><span class="icon">🎵</span><strong>TikTok</strong><small>@kt.world.solutions</small></a>
+        <a class="link" href="https://www.linkedin.com/company/ktworldsolutionsllc/" target="_blank" rel="noopener"><span class="icon">💼</span><strong>LinkedIn</strong><small>KT World Solutions LLC</small></a>
+        <a class="link" href="mailto:ktworldsolutionsllc@outlook.com"><span class="icon">✉️</span><strong>Email</strong><small>ktworldsolutionsllc@outlook.com</small></a>
+        <a class="link" href="KTWS_Contact.vcf"><span class="icon">👤</span><strong>Save Contact</strong><small>Download contact card</small></a>
+      </div></div>
       <div class="footer">
         <p>KT World Solutions LLC · Greensboro, North Carolina · Serving NC and the Southeast</p>
-        <div class="mini">
-          <a href="index.html">Home</a>
-          <a href="contact.html">Request Services</a>
-          <a href="tel:+12523265269">Call</a>
-          <a href="mailto:ktworldsolutionsllc@outlook.com">Email</a>
-        </div>
+        <div class="mini"><a href="index.html">Home</a><a href="contact.html">Request Services</a><a href="tel:+12523265269">Call</a><a href="mailto:ktworldsolutionsllc@outlook.com">Email</a></div>
         <p class="note">Use this link in email signatures, social bios, QR codes, flyers, and business cards.</p>
       </div>
     </section>
