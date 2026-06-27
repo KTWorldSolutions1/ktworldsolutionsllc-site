@@ -1,0 +1,24 @@
+:root{--gold:#f0bd2f}
+.connect-page{margin:0;background:radial-gradient(circle at top right,rgba(240,189,47,.16),transparent 34%),linear-gradient(135deg,#050607,#0d131b 55%,#111722);color:#fff;font-family:Arial,Helvetica,sans-serif}
+.connect-shell{min-height:100vh;padding:32px 18px 48px}
+.connect-card{max-width:980px;margin:0 auto;background:rgba(7,10,15,.90);border:1px solid rgba(240,189,47,.38);border-radius:30px;box-shadow:0 30px 90px rgba(0,0,0,.45);overflow:hidden}
+.connect-hero{text-align:center;padding:42px 24px 28px;border-bottom:1px solid rgba(240,189,47,.22)}
+.connect-logo{width:190px;max-width:70%;margin:0 auto 22px;background:#fff;border-radius:14px;padding:10px 14px;display:block}
+.connect-tagline{color:var(--gold);font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.connect-hero h1{font-size:clamp(36px,6vw,70px);line-height:.96;letter-spacing:-.055em;text-transform:uppercase;margin:12px 0}
+.connect-description{max-width:720px;margin:0 auto;color:#d8dee6;font-size:18px;line-height:1.6}
+.connect-section{padding:30px 24px;border-bottom:1px solid rgba(255,255,255,.08)}
+.connect-section h2{text-align:center;color:var(--gold);font-size:14px;text-transform:uppercase;letter-spacing:.22em;margin:0 0 18px}
+.connect-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.connect-link{display:flex;flex-direction:column;gap:6px;background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px;color:#fff;text-decoration:none;min-height:120px;transition:.18s ease}
+.connect-link:hover{transform:translateY(-3px);border-color:rgba(240,189,47,.68);background:rgba(240,189,47,.10)}
+.connect-link span{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:var(--gold);color:#050607;font-size:24px;margin-bottom:6px}
+.connect-link strong{text-transform:uppercase;letter-spacing:.04em;font-size:16px}
+.connect-link small{color:#cfd6df;font-size:13px;line-height:1.35}
+.connect-primary{background:linear-gradient(135deg,var(--gold),#ffd85a);color:#050607}
+.connect-primary span{background:#050607;color:var(--gold)}
+.connect-primary small,.connect-primary strong{color:#050607}
+.connect-footer{text-align:center;padding:26px 24px 34px;color:#d8dee6}
+.connect-footer div{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.connect-footer a{border:1px solid rgba(240,189,47,.45);border-radius:999px;padding:11px 16px;color:var(--gold);text-decoration:none;font-weight:900;text-transform:uppercase;font-size:12px}
+@media(max-width:760px){.connect-grid{grid-template-columns:1fr}.connect-card{border-radius:24px}.connect-section{padding:26px 20px}.connect-hero{padding:34px 20px 24px}}
